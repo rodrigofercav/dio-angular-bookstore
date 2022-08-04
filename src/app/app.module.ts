@@ -14,6 +14,7 @@ import { Error404Component } from './shared/components/error404/error404.compone
 import { BookCategoryPipe } from './shared/pipes/book-category.pipe';
 import { BooksComponent } from './pages/books/books.component';
 import { BooksOnSaleComponent } from './pages/books-on-sale/books-on-sale.component';
+import { FilterComponent } from './components/filter/filter.component';
 
 @NgModule({
     declarations: [
@@ -26,7 +27,8 @@ import { BooksOnSaleComponent } from './pages/books-on-sale/books-on-sale.compon
         Error404Component,
         BookCategoryPipe,
         BooksComponent,
-        BooksOnSaleComponent
+        BooksOnSaleComponent,
+        FilterComponent
     ],
     imports: [
         BrowserModule,

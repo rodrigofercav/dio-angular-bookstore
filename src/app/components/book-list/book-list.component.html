@@ -1,8 +1,1 @@
-<div class="d-flex">
-    <div class="col-md-2" style="border: 1px solid red;">
-        filters
-    </div>
-    <div class="col-md-9 container-book-list">
-        <app-book-card *ngFor="let book of bookList" [categoryList]="categoryList" [book]="book"></app-book-card>
-    </div>
-</div>
+<app-book-card *ngFor="let book of bookList" [categoryList]="categoryList" [book]="book"></app-book-card>
