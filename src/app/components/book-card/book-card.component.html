@@ -1,0 +1,26 @@
+<div class="card w-18rem">
+    <img class="card-img-top" height="400" src="{{ book.image_url }}" alt="{{ book.name }}">
+    <div class="card-body">
+        <h5 class="card-title">{{ book.name }}</h5>
+        <p class="card-text">{{ (book.description.substring(0, 200).trim() + "...") }}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{ book.author }}</li>
+        <li class="list-group-item">{{ book.category_id | bookCategory: categoryList  }}</li>
+        <li class="list-group-item" *ngIf="book.discount === 0">
+            <div class="price-discount">
+                <p>{{ book.price | currency: "USD" }}</p>
+            </div>
+        </li>
+        <li class="list-group-item" *ngIf="book.discount > 0">
+            <div class="price-discount d-flex flex-row">
+                <p class="text-discount">{{ book.price | currency: "USD" }}</p>
+                <p>&emsp;{{ book.price - ((book.price * book.discount) / 100) | currency: "USD" }}</p>
+            </div>
+        </li>
+    </ul>
+    <div class="card-body">
+        <a class="card-link w-46 btn btn-success">Add to cart</a>
+        <a class="card-link w-46 btn btn-outline-success">Buy now</a>
+    </div>
+</div>

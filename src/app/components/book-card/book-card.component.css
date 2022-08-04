@@ -1,0 +1,17 @@
+.w-18rem {
+    width: 18rem;
+}
+
+.w-46 {
+    width: 46%;
+}
+
+.price-discount p {
+    margin-bottom: 0;
+}
+
+.text-discount {
+    text-decoration: line-through;
+    color: red;
+    font-size: 75%;
+}
