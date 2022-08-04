@@ -1,0 +1,20 @@
+.margin-menu {
+    margin-bottom: 95px;
+}
+
+.margin-logo {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.to-end {
+    justify-content: flex-end;
+}
+
+.link-menu-right {
+    color: white;
+}
+
+.menu-right {
+    margin-right: 10px;
+}

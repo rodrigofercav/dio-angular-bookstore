@@ -1,0 +1,51 @@
+<div class="col-md-12 footer-details">
+    <div class="container-footer">
+        <div class="row col-md-9">
+            <div class="col-md-4">
+                <h2>institutional</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Club of Books</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+                <br>
+                <h2>help</h2>
+                <ul>
+                    <li>Privacy Policies</li>
+                    <li>Shipping and Delivery</li>
+                    <li>Exchanges and Returns</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h2>categories</h2>
+                <ul>
+                    <li *ngFor="let cat of categoryList"> {{ cat.name }}</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h2>account</h2>
+                <ul>
+                    <li>Log in</li>
+                    <li>Register</li>
+                    <li>My Orders</li>
+                </ul>
+                <br>
+                <h2>payment methods</h2>
+                <ul>
+                    <li>PIX</li>
+                    <li>Debit card</li>
+                    <li>Credit card</li>
+                    <li>Bank transfer</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row col-md-9">
+            <hr>
+            <p>bookstore - all rights reserved - 2022 - developed by <a
+                    href="https://github.com/rodrigofercav/dio-angular-bookstore" target="_blank">Rodrigo Ferreira
+                    Cavalcante</a></p>
+        </div>
+    </div>
+</div>
