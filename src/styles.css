@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background: #dedede;
+}
+
+.container-book-list {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-book-list app-book-card {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 35px;
+}
