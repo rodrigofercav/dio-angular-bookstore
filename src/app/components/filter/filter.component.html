@@ -1,1 +1,7 @@
-<p>filter works</p>
+<h2>Filter by Categories</h2>
+<ul>
+    <li><a class="clear-filter" (click)="filterByCategory(0)">Clear Filter</a></li>
+    <li *ngFor="let cat of categoryList">
+       <a (click)="filterByCategory(cat.id)">{{ cat.name }}</a>
+    </li>
+</ul>

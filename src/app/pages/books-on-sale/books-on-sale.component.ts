@@ -6,4 +6,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BooksOnSaleComponent {
     constructor() { }
+
+    idCategoryToFilterBooks!: number;
+
+    filterBooks(filteredCategory: number): void {
+        console.log("chegou na page books on sale:",filteredCategory);
+        this.idCategoryToFilterBooks = filteredCategory;
+    }
 }

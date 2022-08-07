@@ -1,4 +1,4 @@
 <div class="d-flex">
-    <app-filter ngClass="col-md-2"></app-filter>
-    <app-book-list ngClass="col-md-10 container-book-list" [booksOnSale]="false"></app-book-list>
+    <app-filter (eeFilterBooks)="filterBooks($event)" ngClass="col-md-2"></app-filter>
+    <app-book-list [filterByCategory]="idCategoryToFilterBooks" ngClass="col-md-10 container-book-list" [booksOnSale]="false"></app-book-list>
 </div>

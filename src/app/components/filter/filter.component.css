@@ -1,0 +1,9 @@
+a {
+    cursor: pointer;
+}
+
+.clear-filter {
+    text-decoration: none;
+    font-style: italic;
+    color: coral;
+}
