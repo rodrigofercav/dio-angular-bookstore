@@ -9,7 +9,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BookCardComponent } from './components/book-card/book-card.component';
 import { BookListComponent } from './components/book-list/book-list.component';
-import { HomeComponent } from './pages/home/home.component';
 import { Error404Component } from './shared/components/error404/error404.component';
 import { BookCategoryPipe } from './shared/pipes/book-category.pipe';
 import { BooksComponent } from './pages/books/books.component';
@@ -23,7 +22,6 @@ import { FilterComponent } from './components/filter/filter.component';
         FooterComponent,
         BookCardComponent,
         BookListComponent,
-        HomeComponent,
         Error404Component,
         BookCategoryPipe,
         BooksComponent,
