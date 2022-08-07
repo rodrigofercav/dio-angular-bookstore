@@ -1,1 +1,2 @@
+<h2 *ngIf="bookList.length === 0">No book in "{{ filterByCategory | bookCategory: categoryList }}" category.</h2>
 <app-book-card *ngFor="let book of bookList" [categoryList]="categoryList" [book]="book"></app-book-card>
